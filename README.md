@@ -3,7 +3,7 @@
 Terminal-Dateimanager mit Catppuccin-Mocha-Flavor und optionalem Shell-Verzeichniswechsel.
 
 **[Dokumentation](https://aco-arch-dotfiles.readthedocs.io/en/latest/components/#yazi)** ·
-[Shell-Integration](https://aco-arch-dotfiles.readthedocs.io/en/latest/shell/) ·
+[Shell-Integration](https://aco-zsh.readthedocs.io/en/latest/guide/) ·
 [Installation und Updates](https://aco-arch-dotfiles.readthedocs.io/en/latest/arch-package/)
 
 ```bash
