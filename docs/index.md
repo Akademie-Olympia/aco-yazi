@@ -9,6 +9,13 @@
 ::::{grid} 1 2 2 3
 :gutter: 3
 
+:::{grid-item-card} Anleitung
+:link: guide
+:link-type: doc
+
+Alltag, Tasten, Einstellungen im Detail, Fehlersuche.
+:::
+
 :::{grid-item-card} Installation
 :link: installation
 :link-type: doc
@@ -36,6 +43,7 @@ Alle Komponenten, Cheatsheet und Installer.
 :hidden:
 :maxdepth: 2
 
+guide
 installation
 configuration
 ```
