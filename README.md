@@ -1,28 +1,28 @@
 # Yazi configuration
 
-Terminal-Dateimanager mit Catppuccin-Mocha-Flavor und optionalem Shell-Verzeichniswechsel.
+Terminal file manager with the Catppuccin Mocha flavor and optional shell directory tracking.
 
-**[Dokumentation](https://aco-arch-dotfiles.readthedocs.io/en/latest/components/#yazi)** ·
-[Shell-Integration](https://aco-zsh.readthedocs.io/en/latest/guide/) ·
-[Installation und Updates](https://aco-arch-dotfiles.readthedocs.io/en/latest/arch-package/)
+**[Documentation](https://aco-docs.readthedocs.io/en/latest/yazi/)** ·
+[Guide](https://aco-docs.readthedocs.io/en/latest/yazi/guide/) ·
+[Design & dependencies](https://aco-docs.readthedocs.io/en/latest/yazi/design/) ·
+[Installation and updates](https://aco-arch-dotfiles.readthedocs.io/en/latest/arch-package/)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Akademie-Olympia/aco-arch-dotfiles/main/install.sh | bash -s -- yazi
 ```
 
-Paket: `aco-arch-dotfiles-yazi`. Dateien: `~/.config/yazi/yazi.toml`, `theme.toml`,
-`package.toml` und `flavors/`. `yazi` startet den Dateimanager; die Zsh-Funktion `y`
-übernimmt anschließend das zuletzt besuchte Verzeichnis.
+Package: `aco-arch-dotfiles-yazi`. This standalone repository holds the development sources and the package recipe in
+`packaging/arch/PKGBUILD`. The documentation of this component lives in the shared
+[aco-docs](https://github.com/Akademie-Olympia/aco-docs) repository (one Read the Docs project for all small components).
+Push to `main`; after a successful registry build update with `sudo pacman -Syu`. Details and local builds: [PACKAGING.md](PACKAGING.md).
 
-Hier unabhängig auf `main` pushen; nach erfolgreichem Registry-Build mit
-`sudo pacman -Syu` aktualisieren. [PACKAGING.md](PACKAGING.md).
+### Customisation
 
-### Anpassung
+`yazi.toml` controls behaviour, `theme.toml` the theme and `flavors/` holds the bundled flavor. Start with `yazi`; the Zsh function `y` optionally changes into the last visited directory.
 
-`yazi.toml` steuert das Verhalten, `theme.toml` das Theme und `flavors/` enthält die mitgelieferte Flavor. Mit `yazi` starten; die Zsh-Funktion `y` übernimmt optional das zuletzt besuchte Verzeichnis.
-
-Eigene Änderungen in der aktivierten Benutzerkopie bleiben bei der Synchronisierung erhalten; neue abweichende Vorgaben erscheinen als `.pacnew`. Siehe [Update und Wiederherstellung](https://aco-arch-dotfiles.readthedocs.io/en/latest/verification/).
+Your own changes in the activated user copy survive synchronisation; new differing defaults appear as `.pacnew`.
+See [update and recovery](https://aco-arch-dotfiles.readthedocs.io/en/latest/verification/).
 
 [![Package safety](https://github.com/Akademie-Olympia/aco-yazi/actions/workflows/package.yml/badge.svg)](https://github.com/Akademie-Olympia/aco-yazi/actions/workflows/package.yml)
 
-[MIT-Lizenz](LICENSE); die mitgelieferte Flavor behält ihre eigenen Lizenzen.
+[MIT licence](LICENSE).
